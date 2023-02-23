@@ -149,8 +149,39 @@ button {
   border: none;
   font-size: 1.125rem;
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 .btn-ios {
   background-color: var(--dark-blue);
   color: var(--white);
+}
+.btn-ios:hover {
+  background-color: var(--light-blue);
+}
+
+.btn-android:hover {
+  background-color: var(--yellow-dark);
+}
+
+.site-footer {
+  margin: 1em;
+
+  padding-bottom: 4rem;
+}
+.logo-footer {
+  margin-bottom: 2em;
+}
+.footer-text {
+  line-height: 1.625rem;
+  margin-bottom: 1.5em;
+}
+.contact a {
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.icons-container {
+  display: flex;
+  gap: 1.5em;
 }
