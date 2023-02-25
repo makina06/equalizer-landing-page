@@ -21,11 +21,8 @@
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
   <body>
-    <div class="page">
-      <header class="page-header">
-        <img class="logo-header" src="./assets/logo.svg" alt="logo-equalizer" />
-      </header>
-
+    <header class="page-header">
+      <img class="logo-header" src="./assets/logo.svg" alt="logo-equalizer" />
       <div class="first-container">
         <h1 class="main-title">We make your music sound extraordinary.</h1>
 
@@ -36,18 +33,10 @@
           control, reverb, and more!
         </p>
       </div>
-      <div class="background">
-        <img
-          class="background-pattern-1"
-          src="./assets/bg-pattern-1.svg"
-          alt=""
-        />
-      </div>
-      <div class="second-part">
-        <div class="container-pattern-2">
-          <img class="pattern-2" src="./assets/bg-pattern-2.svg" alt="" />
-        </div>
-        <div class="container-mobile-illustration">
+    </header>
+    <main>
+      <div class="illustration">
+        <div class="container-illustration">
           <img
             class="mobile-illustration"
             src="./assets/illustration-app.png"
@@ -55,7 +44,8 @@
           />
         </div>
       </div>
-      <div class="third-part">
+
+      <section class="membership">
         <h2 class="name-membership">Premium EQ</h2>
         <p class="description-membership">
           Get expert-level control with a robust equalizer, volume mixer, and
@@ -82,44 +72,43 @@
             Android Download
           </button>
         </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <img class="logo-footer" src="./assets/logo.svg" alt="logo-equalizer" />
+      <div class="footer-text">
+        <p class="copyright">All rights reserved © Equalizer 2021</p>
+        <p class="contact">
+          Have any problems? Contact us via social media or email us at
+          <a href="mailto:equalizer@example.com">equalizer@example.com</a>
+        </p>
       </div>
-
-      <footer class="site-footer">
-        <img class="logo-footer" src="./assets/logo.svg" alt="logo-equalizer" />
-        <div class="footer-text">
-          <p class="copyright">All rights reserved © Equalizer 2021</p>
-          <p class="contact">
-            Have any problems? Contact us via social media or email us at
-            <a href="mailto:equalizer@example.com">equalizer@example.com</a>
-          </p>
+      <div class="icons-container">
+        <div class="icon">
+          <a
+            class="facebook-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img src="./assets/icon-facebook.svg" alt="logo-facebook"
+          /></a>
         </div>
-        <div class="icons-container">
-          <div class="icon">
-            <a
-              class="facebook-link"
-              href="https://www.facebook.com/"
-              target="_blank"
-              ><img src="./assets/icon-facebook.svg" alt="logo-facebook"
-            /></a>
-          </div>
-          <div class="icon">
-            <a
-              class="insta-link"
-              href="https://www.instagram.com/?hl=fr"
-              target="_blank"
-              ><img src="./assets/icon-instagram.svg" alt="logo-insta"
-            /></a>
-          </div>
-          <div class="icon">
-            <a
-              class="twitter-link"
-              href="https://twitter.com/?lang=fr"
-              target="_blank"
-              ><img src="./assets/icon-twitter.svg" alt="logo-twitter"
-            /></a>
-          </div>
+        <div class="icon">
+          <a
+            class="insta-link"
+            href="https://www.instagram.com/?hl=fr"
+            target="_blank"
+            ><img src="./assets/icon-instagram.svg" alt="logo-insta"
+          /></a>
         </div>
-      </footer>
-    </div>
+        <div class="icon">
+          <a
+            class="twitter-link"
+            href="https://twitter.com/?lang=fr"
+            target="_blank"
+            ><img src="./assets/icon-twitter.svg" alt="logo-twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
