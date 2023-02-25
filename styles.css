@@ -150,6 +150,7 @@ button {
   font-size: 1.125rem;
   font-weight: var(--fw-bold);
   cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
 }
 .btn-ios {
   background-color: var(--dark-blue);
@@ -157,10 +158,12 @@ button {
 }
 .btn-ios:hover {
   background-color: var(--light-blue);
+  transform: scale(1.03);
 }
 
 .btn-android:hover {
   background-color: var(--yellow-dark);
+  transform: scale(1.03);
 }
 .site-footer {
   margin: 3em 1.5em;
@@ -182,6 +185,10 @@ button {
 .icons-container {
   display: flex;
   gap: 1.5em;
+}
+
+.icon:hover svg path {
+  fill: var(--orange);
 }
 
 /* CSS styling Tablet */
@@ -226,7 +233,6 @@ button {
 @media only screen and (min-width: 1024px) {
   html {
     font-size: 20px;
-    max-width: 1444px;
   }
   body {
     background-image: url(./assets/bg-pattern-1.svg),
