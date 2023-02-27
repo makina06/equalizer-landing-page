@@ -168,13 +168,16 @@ button {
 .site-footer {
   margin: 3em 1.5em;
   padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .logo-footer {
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
 .footer-text {
   line-height: 1.625rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .contact a {
   font-weight: var(--fw-bold);
