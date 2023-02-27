@@ -169,7 +169,7 @@ button {
   margin: 3em 1.5em;
   padding-bottom: 4rem;
 }
-.logo-equalizer {
+.logo-footer {
   margin-bottom: 2em;
 }
 .footer-text {
@@ -219,17 +219,32 @@ button {
     width: 399px;
     right: 5rem;
   }
+
   .site-footer {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+      "logo ."
+      "text icon";
   }
-  .site-footer > * {
-    flex: 1;
+  .logo-footer {
+    grid-area: logo;
+    margin: auto 0;
+  }
+
+  .footer-text {
+    grid-area: text;
   }
   .icons-container {
+    grid-area: icon;
     justify-content: flex-end;
+    align-items: center;
   }
 }
+
+/* CSS styling Desktop */
 @media only screen and (min-width: 1024px) {
   html {
     font-size: 20px;
@@ -257,5 +272,7 @@ button {
   .membership {
     width: 446px;
     right: 5rem;
+  }
+  .site-footer {
   }
 }
