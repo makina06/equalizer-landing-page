@@ -227,6 +227,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 1rem;
 
     grid-template-areas:
       "logo ."
@@ -234,7 +235,7 @@ button {
   }
   .logo-footer {
     grid-area: logo;
-    margin: auto 0;
+    align-self: flex-end;
   }
 
   .footer-text {
@@ -277,5 +278,12 @@ button {
     right: 5rem;
   }
   .site-footer {
+    margin-top: 5rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: "logo text icon";
+  }
+  .logo-footer {
+    align-self: flex-start;
   }
 }
