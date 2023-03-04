@@ -72,13 +72,13 @@ h6 {
 .logo-header {
   margin: 1.5em 1.5em 4em;
 }
-.main-title {
+.header-title {
   font-size: 2.5rem;
   line-height: 1.2em;
   font-weight: var(--fw-bold);
   margin: 2rem 1.5rem 3rem;
 }
-.main-description {
+.header-text-description {
   margin: 1.5rem;
   line-height: 1.625em;
 }
@@ -177,7 +177,6 @@ button {
 }
 .footer-text {
   line-height: 1.625rem;
-  /* margin-bottom: 3rem; */
 }
 .contact a {
   font-weight: var(--fw-bold);
@@ -208,7 +207,7 @@ button {
     background-size: 33%, 100%;
   }
 
-  .first-container {
+  .header-text {
     width: 67%;
   }
   main {
@@ -264,7 +263,7 @@ button {
     max-width: 1110px;
     margin: 0 auto;
   }
-  .first-container {
+  .header-text {
     width: 75%;
   }
   main {
